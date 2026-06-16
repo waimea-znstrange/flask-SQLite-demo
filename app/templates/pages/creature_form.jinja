@@ -1,0 +1,28 @@
+{#=====================================================
+  New Creature form page
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+
+  <h2>New Creature</h2>
+
+  <form method="post" action="/creature/new">
+    <label>
+      Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Species
+      <input type="text" name="species" required>
+    </label>
+
+    <button>Add Creature</button>
+  
+  </form>
+
+{% endblock %}
+

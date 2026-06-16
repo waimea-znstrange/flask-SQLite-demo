@@ -29,6 +29,22 @@ def show_welcome():
 
 
 #-----------------------------------------------------------
+# New creature form
+#-----------------------------------------------------------
+@app.get("/creature/new")
+def show_creature_form():
+    return render_template("pages/creature_form.jinja")
+
+
+#-----------------------------------------------------------
+# Handle the creature form
+#-----------------------------------------------------------
+@app.post("/creature/new")
+def process_creature_form():
+    print(request.form)
+
+
+#-----------------------------------------------------------
 # Creature list page - Show all the creatures
 #-----------------------------------------------------------
 @app.get("/creatures")
