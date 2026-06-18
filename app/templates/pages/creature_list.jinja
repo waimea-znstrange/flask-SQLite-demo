@@ -16,6 +16,7 @@
             <div class="creature">
                 <h3>{{ creature.name }}</h3>
                 <p>Species: <strong>{{ creature.species }}</strong></p>
+                <p><a href="/creature/{{ creature.id }}/delete">Delete</a></p>
             </div>
 
         {% else %}

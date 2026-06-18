@@ -111,3 +111,29 @@ main > h2 {
 }
 
 
+/* Forms -------------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 20rem;
+    margin-inline: auto;
+    padding: 1rem;
+    border: 1px solid var(--border-col);
+    border-radius: 0.5rem;
+    background-color: var(--back-col-dark);
+
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 1rem;
+        background-color: var(--accent-col);
+        color: var(--back-col);
+        border: none;
+    }
+}
